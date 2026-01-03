@@ -1,0 +1,32 @@
+<h1>📊 Рынок скинов Standoff 2</h1>
+<p class="subtitle">Обновление каждые 15 секунд</p>
+
+<!-- Реклама -->
+<div class="ad">
+  🔥 Здесь будет реклама (будущие деньги)
+</div>
+
+<input id="search" placeholder="🔍 Поиск скина">
+
+<div class="buttons">
+  <button onclick="sortByPrice(true)">⬆ Дороже</button>
+  <button onclick="sortByPrice(false)">⬇ Дешевле</button>
+</div>
+
+<table id="skinsTable">
+  <thead>
+    <tr>
+      <th>Скин</th>
+      <th>Цена (Gold)</th>
+      <th>Изменение</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<h2>📈 График цены</h2>
+<canvas id="chart" height="120"></canvas>
+
+<div class="premium">
+  ⭐ Премиум: уведомления о падении цен (скоро)
+</div>
