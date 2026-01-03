@@ -1,0 +1,82 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #1f1f1f;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #ff4d4d;
+}
+
+header input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+/* СЕТКА ДЛЯ КАРТОЧЕК */
+.market-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* КАРТОЧКИ СКИНОВ */
+.card {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.card-content p {
+    margin: 0;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    font-size: 0.9em;
+}
